@@ -1,9 +1,49 @@
 .masthead{
     min-height: 30rem;
     position: relative;
-    display: table;
     width: 100%;
     height: 100vh;
     padding-top: 3rem;
     padding-bottom: 20rem;
+}
+
+#header-content{
+    margin-top: 50px;
+    height: 100vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text  head-shot" "arrow arrow";
+}
+
+#text {
+    grid-area: text;
+    align-self: center;
+}
+
+#head-shot {
+    grid-area: head-shot;
+    align-self: center;
+    img{
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+        float: right;
+        max-width: 500px;
+    }
+}
+
+#arrow{
+    grid-area: arrow;
+    align-self: center;
+    text-align: center;
+    img{
+    
+        width: 75px;
+        height: 75px;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+  
 }
