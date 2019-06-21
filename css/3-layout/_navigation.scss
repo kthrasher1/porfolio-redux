@@ -19,7 +19,7 @@
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
-        transition: ease-in 0s;
+        transition: ease-in 0.1s;
       }
   
       &:hover {

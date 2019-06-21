@@ -1,33 +1,17 @@
 ---
 
 ---
-// add bootstrap variable settings here
-@import 'variables';
-@import 'navigation';
-@import 'bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
 
-// add more css stuff here
 
-body {
-  font-family: $font-body;
-  padding-top: 50px;
-  color: black !important;
-}
+
+@import '4-vendor/4-vendor';
+@import '1-helpers/1-helpers';
+@import '2-base/2-base';
+@import '3-layout/3-layout';
 
 #head-shot {
   border-radius: 100px;
-}
-
-
-h1{
-  font-family: $font-header;
-}
-
-header{
-  height: 100vh;
 }
 
 .content {
