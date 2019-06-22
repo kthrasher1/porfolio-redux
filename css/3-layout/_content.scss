@@ -3,3 +3,36 @@ h1{
     font-size: 5.5em;
     position: relative;
   }
+
+#images{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "PicOne PicTwo" "PicThree PicFour";
+
+  img{
+    max-width: 100%;
+    justify-self: stretch;
+
+  }
+}
+
+.PicOne { 
+  grid-area: PicOne; 
+}
+
+.PicTwo { 
+  grid-area: PicTwo; 
+}
+
+.PicThree { 
+  grid-area: PicThree; 
+}
+
+.PicFour { 
+  grid-area: PicFour;
+ }
+
