@@ -3,33 +3,17 @@ layout: default
 title:  'Welcome'
 ---
 
-<div class="PicOne" id="breakout"><img src="{{ site.path }}/images/breakout.gif" alt=""></div>
-<div class="PicTwo"><img src="{{ site.path }}/images/digitalCheckup.png"  alt=""></div>
-<div class="PicThree"><img src="{{ site.path }}/images/LocationStation.png"  alt=""></div>
-<div class="PicFour" id="orlando"><img src="{{ site.path }}/images/orlando2.gif"  alt=""></div>
+<div class="PicOne">
+ <a href=""> <img  id="breakout" src="{{ site.path }}/images/breakout.gif" alt=""> </a>
+</div>
 
-<script>
-    
-$(function() {
-    
-    $("#orlando").hover(
-        function() {
-            $(this).attr("src", "{{ site.path }}/images/orlando.gif");
-        },
-        function() {
-            $(this).attr("src", "{{ site.path }}/images/orlando2.gif");
-        }                         
-    );                  
+<div class="PicTwo">
+  <a href=""><img src="{{ site.path }}/images/digitalCheckup.png"  alt=""></a> 
+</div>
+<div class="PicThree">
+<a href=""><img src="{{ site.path }}/images/LocationStation.png"  alt=""></a> 
+</div>
+<div class="PicFour" >
+  <a href=""><img id="orlando" src="{{ site.path }}/images/orlando2.gif"  alt=""></a> 
+</div>
 
-    $("#breakout").hover(
-        function() {
-            $(this).attr("src", "{{ site.path }}/images/breakout2.gif");
-        },
-        function() {
-            $(this).attr("src", "{{ site.path }}/images/breakout.gif");
-        }                         
-    ); 
-               
-});
-
-</script>
