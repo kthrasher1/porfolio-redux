@@ -3,7 +3,33 @@ layout: default
 title:  'Welcome'
 ---
 
-<div class="PicOne"><img src="{{ site.path }}/images/breakout.png" alt=""></div>
+<div class="PicOne" id="breakout"><img src="{{ site.path }}/images/breakout.gif" alt=""></div>
 <div class="PicTwo"><img src="{{ site.path }}/images/digitalCheckup.png"  alt=""></div>
-<div class="PicThree"><img src="{{ site.path }}/images/Capture.png"  alt=""></div>
-<div class="PicFour"><img src="{{ site.path }}/images/orlando.png"  alt=""></div>
+<div class="PicThree"><img src="{{ site.path }}/images/LocationStation.png"  alt=""></div>
+<div class="PicFour" id="orlando"><img src="{{ site.path }}/images/orlando2.gif"  alt=""></div>
+
+<script>
+    
+$(function() {
+    
+    $("#orlando").hover(
+        function() {
+            $(this).attr("src", "{{ site.path }}/images/orlando.gif");
+        },
+        function() {
+            $(this).attr("src", "{{ site.path }}/images/orlando2.gif");
+        }                         
+    );                  
+
+    $("#breakout").hover(
+        function() {
+            $(this).attr("src", "{{ site.path }}/images/breakout2.gif");
+        },
+        function() {
+            $(this).attr("src", "{{ site.path }}/images/breakout.gif");
+        }                         
+    ); 
+               
+});
+
+</script>

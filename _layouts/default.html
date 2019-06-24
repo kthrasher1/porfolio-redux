@@ -6,7 +6,7 @@
 
    <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="{{ site.path }}/js/jquery.min.js"></script>
    <script src="{{ site.path }}/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -19,6 +19,31 @@
       </div>
     </div><!-- /.container -->
 
+    <script>
+    
+        $(function() {
+            
+            $("#orlando").hover(
+                function() {
+                    $(this).attr("src", "{{ site.path }}/images/orlando.gif");
+                },
+                function() {
+                    $(this).attr("src", "{{ site.path }}/images/orlando2.gif");
+                }                         
+            );                  
+        
+            $("#breakout").hover(
+                function() {
+                    $(this).attr("src", "{{ site.path }}/images/breakout2.gif");
+                },
+                function() {
+                    $(this).attr("src", "{{ site.path }}/images/breakout.gif");
+                }                         
+            ); 
+                       
+        });
+        
+        </script>
 {% include footer.html %}
 </body>
 </html>
