@@ -4,37 +4,41 @@ h1{
     position: relative;
   }
 
-#images{
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "PicOne PicTwo" "PicThree PicFour";
-
-  img{
-    max-width: 100%;
-    justify-self: fill;
-    
-
-  }
+.content{
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
 }
 
-.PicOne { 
-  grid-area: PicOne; 
+.row-porfolio{
+  display: flex;
+  flex-wrap: wrap;
   
 }
 
-.PicTwo { 
-  grid-area: PicTwo; 
+.col-images{
+  flex: 50%;
+  max-width: 50%;
+  img{
+    vertical-align: middle;
+    width: 100%;
+  }
 }
 
-.PicThree { 
-  grid-area: PicThree; 
+.row-content {
+  background: #eeeeee;
+  position: relative;
+  margin: 150px;
+  padding: 150px;
+
+  img{
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
 }
 
-.PicFour { 
-  grid-area: PicFour;
- }
+
+
 

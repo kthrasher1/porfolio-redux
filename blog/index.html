@@ -1,0 +1,28 @@
+---
+layout: blog-default
+title: Kurtis Thrasher | Blog
+---
+
+{% assign sorted_posts = site.categories.post | sort: 'date' %}
+
+{% for post in sorted_posts reversed %}
+
+{% if forloop.first == true %}
+  <h1>Latest Post</h1> 
+{% else %}
+ <h1> {{ post.date | date: "%Y" }} </h1>
+{% endif %}
+
+<article class='post'>
+  <h1 class='post-title'>
+    <a href="{{ site.path }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+    
+  </h1>
+  <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+     {{ post.excerpt | strip_html | truncatewords:35}}<br>
+    <a id = "read" href="{{ post.url }}">Read more...</a><br><br>
+</article>
+
+{% endfor %}

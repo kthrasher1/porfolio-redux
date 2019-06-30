@@ -19,7 +19,8 @@ sass:
   sass_dir: css
   style:    expanded
 
-
+plugins: [jekyll-paginate]
+paginate: 5
 
 exclude:
 - README.md
